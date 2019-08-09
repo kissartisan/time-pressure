@@ -1,7 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Posts</h1>
+    <div style="display:flex; justify-content: space-between;align-items:center;margin-bottom: 1rem;">
+        <h1>Posts</h1>
+        <a href="{{ route('posts.create') }}" class="btn btn-primary">Create Post</a>
+    </div>
 
     <table class="table table-hover">
         <th>Title</th>
